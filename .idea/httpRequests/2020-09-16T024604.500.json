@@ -1,0 +1,7 @@
+{
+  "timestamp": "2020-09-16T06:46:04.176+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "\r\n### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'name' cannot be null\r\n### The error may involve com.leyou.item.mapper.CategoryMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO tb_category  ( id,name,parent_id,is_parent,sort ) VALUES( ?,?,?,?,? )\r\n### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'name' cannot be null\n; Column 'name' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'name' cannot be null",
+  "path": "/category"
+}

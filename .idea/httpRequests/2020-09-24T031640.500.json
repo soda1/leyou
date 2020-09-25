@@ -1,0 +1,7 @@
+{
+  "timestamp": "2020-09-24T07:16:40.647+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "nested exception is org.apache.ibatis.exceptions.PersistenceException: \r\n### Error querying database.  Cause: java.lang.RuntimeException: Driver com.mysql.jdbc.Driver claims to not accept jdbcUrl, jdbc:mysql:localhost:3306/leyou\r\n### The error may exist in com/leyou/user/mapper/UserMapper.java (best guess)\r\n### The error may involve com.leyou.user.mapper.UserMapper.selectCount\r\n### The error occurred while executing a query\r\n### Cause: java.lang.RuntimeException: Driver com.mysql.jdbc.Driver claims to not accept jdbcUrl, jdbc:mysql:localhost:3306/leyou",
+  "path": "/check/zhansan/1"
+}

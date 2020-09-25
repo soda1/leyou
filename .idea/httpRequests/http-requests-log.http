@@ -1,0 +1,162 @@
+POST http://localhost:8085/code
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+{phone: 18377177883
+
+###
+
+GET http://localhost:8085/check/zhansan/1
+
+<> 2020-09-24T031837.200.json
+
+###
+
+GET http://localhost:8085/check/zhansan/1
+
+<> 2020-09-24T031640.500.json
+
+###
+
+GET http://localhost:8085/check/{param}/{type}
+
+###
+
+GET http://localhost:8085/check/{param}/{type}
+
+###
+
+GET http://localhost:8081/spu/88
+
+<> 2020-09-22T044154.200.json
+
+###
+
+POST http://localhost:8081/category
+
+<> 2020-09-16T025055.500.json
+
+###
+
+POST http://localhost:8081/category
+
+<> 2020-09-16T024604.500.json
+
+###
+
+GET http://localhost:8081/spec/groups/76
+
+<> 2020-09-16T020849.200.json
+
+###
+
+GET http://localhost:8081/spec/groups/76
+
+<> 2020-09-16T020758.200.txt
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+<> 2020-09-16T015923.200.txt
+
+###
+
+GET http://localhost:8081/spec/hello1/2
+
+<> 2020-09-16T015902.404.json
+
+###
+
+GET http://localhost:8081/spec/hello1/2
+
+<> 2020-09-16T015809.200.txt
+
+###
+
+GET http://localhost:8081/spec/hello1/2
+
+<> 2020-09-16T015654.200.txt
+
+###
+
+GET http://localhost:8081/spec/hello1/2
+
+<> 2020-09-16T015644.200.txt
+
+###
+
+GET http://localhost:8081/spec/hello1/1
+
+<> 2020-09-16T015633.200.txt
+
+###
+
+GET http://localhost:8081/spec/hello1/1
+
+###
+
+GET http://localhost:8081/spec/hello1/1
+
+<> 2020-09-16T015437.404.json
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/hello/2
+
+<> 2020-09-16T015138.200.txt
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/groups/1
+
+###
+
+GET http://localhost:8081/spec/1
+
+<> 2020-09-16T014403.200.txt
+
+###
+
