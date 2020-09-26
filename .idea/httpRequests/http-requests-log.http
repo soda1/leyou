@@ -1,3 +1,17 @@
+POST http://localhost:8087/accredit
+Content-Type: application/x-www-form-urlencoded
+
+username=libin&password=123456
+
+###
+
+POST http://localhost:8087/accredit
+Content-Type: application/x-www-form-urlencoded
+
+username=libin&password=123456
+
+###
+
 POST http://localhost:8085/code
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 {phone: 18377177883

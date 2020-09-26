@@ -19,5 +19,21 @@ zuul:
     item-service: /item/** #商品服务
     search-service: /search/** #搜索服务
     user-service: /user/**  #用户服务
+    auth-service: /auth/** #授权中心服务
   ignored-services:
     - upload-service  #不对文件上传进行路由
+  add-host-header: true #携带请求本身的头信息
+  sensitive-headers: #配置禁止使用的头信息，设置为null，不然set-cookie失效
+
+leyou:
+  jwt:
+    pubKeyPath: F:\Java\Code\SpringBoot\tmp\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item

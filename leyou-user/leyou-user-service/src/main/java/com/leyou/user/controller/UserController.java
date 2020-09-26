@@ -74,6 +74,12 @@ public class UserController {
     }
 
 
+    /**
+     * 查询用户
+     * @param username
+     * @param password
+     * @return
+     */
     @GetMapping("query")
     public ResponseEntity<User> queryUser(
             @RequestParam("username")String username,
