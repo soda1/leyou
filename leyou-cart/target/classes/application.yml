@@ -1,0 +1,26 @@
+server:
+  port: 8088
+#  配置名字
+spring:
+  application:
+    name: cart-service
+#  配置redis
+  redis:
+    host: 127.0.0.1
+#    配置eureka
+eureka:
+  client:
+    service-url:
+     defaultZone: http://127.0.0.1:10086/eureka #eureka 注册中心
+    registry-fetch-interval-seconds: 15 #每15秒拉取服务列表
+  instance:
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+
+leyou:
+  jwt:
+    pubKeyPath: F:\Java\Code\SpringBoot\tmp\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
+
+
+

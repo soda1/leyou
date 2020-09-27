@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
+import sun.rmi.runtime.Log;
 
 import java.util.List;
 
@@ -127,6 +128,22 @@ public class GoodsController {
         return ResponseEntity.ok(null);
     }
 
+
+    /**
+     * 查询指定sku
+     * @param id
+     * @return
+     */
+    @GetMapping("/sku/{id}")
+    public ResponseEntity<Sku> querySkuById(@PathVariable("id") Long id) {
+
+
+        Sku sku =  this.goodService.querySkuById(id);
+        if (sku == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(sku);
+    }
 
 
 }

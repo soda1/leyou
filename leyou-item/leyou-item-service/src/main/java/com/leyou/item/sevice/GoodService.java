@@ -245,4 +245,8 @@ public class GoodService {
             LOGGER.error("消息发送错误:{}" + e, spuId);
         }
     }
+
+    public Sku querySkuById(Long id) {
+        return this.skuMapper.selectByPrimaryKey(id);
+    }
 }

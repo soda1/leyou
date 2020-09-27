@@ -76,7 +76,7 @@ public class AuthController {
             UserInfo userInfo = JwtUtils.getInfoFromToken(token, jwtProperties.getPublicKey());
             //刷新cookie
             String tokenNew = JwtUtils.generateToken(userInfo, jwtProperties.getPrivateKey(), jwtProperties.getExpire());
-            CookieUtils.setCookie(request,response, jwtProperties.getCookieName(), tokenNew, jwtProperties.getCookieMaxAge(), null, true);
+            CookieUtils.setCookie(request,response, jwtProperties.getCookieName(), tokenNew, jwtProperties.getCookieMaxAge()*60, null, true);
             return ResponseEntity.ok(userInfo);
 
         } catch (Exception e) {

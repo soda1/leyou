@@ -20,6 +20,7 @@ zuul:
     search-service: /search/** #搜索服务
     user-service: /user/**  #用户服务
     auth-service: /auth/** #授权中心服务
+    cart-service: /cart/** #购物车服务
   ignored-services:
     - upload-service  #不对文件上传进行路由
   add-host-header: true #携带请求本身的头信息
